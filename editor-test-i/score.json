@@ -1,0 +1,44 @@
+{
+  "title": "Rain Study I",
+  "groups": 2,
+  "sounds": {
+    "demo/1": "demo/1.wav",
+    "demo/3": "demo/3.wav",
+    "demo/5": "demo/5.wav",
+    "C08-S05-rub": "audio/C08-S05-rub.wav"
+  },
+  "credit": "by Gabriel",
+  "effects": {
+    "A": [
+      {
+        "type": "lowpass",
+        "frequency": 100
+      }
+    ],
+    "B": [
+      {
+        "type": "highpass",
+        "frequency": 10000
+      }
+    ]
+  },
+  "events": [
+    {
+      "at": "0:00",
+      "groups": "A",
+      "play": "C08-S05-rub",
+      "ratio": 0.9,
+      "fade": 0,
+      "level": 1
+    },
+    {
+      "at": "0:00",
+      "groups": "B",
+      "play": "C08-S05-rub",
+      "ratio": 1.1,
+      "fade": 0,
+      "level": 1
+    }
+  ],
+  "end": "1:00"
+}
